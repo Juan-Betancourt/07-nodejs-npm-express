@@ -50,7 +50,7 @@ Article.prototype.insertRecord = function(callback) {
             console.log(data);
 
             // COMMENT: What is the purpose of this line? Is the callback invoked when this method is called? Why or why not?
-            // PUT YOUR RESPONSE HERE
+            // PUT YOUR RESPONSE HERE - Functions are essentially mappings between input and output. In JavaScript rather than waiting for the function to complete and return a value, a callback is utilized to do this asynchronously. Just as an AJAX request, developers don't want to hold up the browser. For this instance, the callback is invoked.
             if (callback) callback();
         })
 };
